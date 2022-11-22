@@ -1,6 +1,4 @@
-Live Demo
-
-
+<a href="https://alixiadae.github.io/saladbowl/"> Live Demo </a>
 
 Credits for pictures
 
