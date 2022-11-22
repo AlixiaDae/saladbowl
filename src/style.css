@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'CrabSalad';
+    src: url(../src/CrabSalad.woff);
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -12,6 +17,7 @@ body {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: center;
+    box-shadow: 0px 7px 5px grey;
 }
 
 .search-wrapper {
@@ -49,4 +55,95 @@ body {
     border-style: none;
     font-size: 30px;
     color: whitesmoke;
+}
+
+.sub-wrapper {
+    padding: 40px 150px 60px 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    box-shadow: 0px -7px 7px  grey inset;
+}
+
+.sub-wrapper > :first-child {
+    grid-area: 1;
+    display: grid;
+    grid-template: repeat(2,260px)/repeat(2,260px);
+    padding: 30px;
+}
+
+.sub-wrapper > :first-child > img {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.sub-wrapper > :first-child > :not(:first-child) {
+    grid-area: 2/2;
+}
+
+.sub-wrapper > :not(:first-child) {
+    grid-area: 1/2;
+    text-align: center;
+}
+
+.sub-wrapper > :not(:first-child) > :first-child {
+    font-size: 40px;
+    font-family: 'CrabSalad';
+}
+
+.sub-wrapper > :not(:first-child) > :not(:first-child) {
+    margin-top: 30px;
+    font-size: 30px;
+}
+ 
+.favorites-wrapper {
+    padding: 50px 150px 50px 150px;
+    height: 600px;
+    text-align: center;
+    display: grid;
+    grid-template: 50px 1fr/ repeat(3,1fr);
+    row-gap: 50px;
+    text-align: center;
+    justify-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'CrabSalad';
+}
+
+.favorites-wrapper > :first-child {
+    grid-area: 1/2;
+    font-size: 50px;
+    font-family: 'CrabSalad';
+}
+
+.favorites-wrapper > :not(:first-child) > img {
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.favorites-wrapper > :not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 45px;
+}
+
+.favorite-one {
+    grid-area: 2/1;
+
+}
+
+.favorite-two {
+    grid-area: 2/2;
+}
+
+.favorite-three {
+    grid-area: 2/3;
 }
