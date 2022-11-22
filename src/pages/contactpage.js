@@ -24,7 +24,6 @@ function contactContent() {
     myGitHubHeader.appendChild(myGitHub)
     contactWrapper.appendChild(myGitHubHeader)
   
-
     return contact
 }
 
