@@ -8,6 +8,58 @@ body {
     min-height: 100vh;
 }
 
+.nav-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 25px 100px 25px 100px;
+    display: grid;
+    grid-template-columns: 140px repeat(3,80px) 1fr;
+    column-gap: 40px;
+    text-align: center;
+    align-items: center;
+    font-family: 'CrabSalad';
+}
+
+.logo {
+    grid-area: 1;
+    font-size: 55px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.nav-bar:nth-child(1) {
+    grid-area: 1/2;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: rgb(133, 14, 14);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer > div {
+    color: whitesmoke;
+}
+
+.footer > :first-child {
+    font-size: 24px;
+}
+
+.footer > :nth-child(2) {
+    font-size: 18px;
+}
+/*Home Page*/
+
 .banner {
     height: 670px;
     background-position: center;
@@ -24,6 +76,7 @@ body {
     grid-area: 1;
     display: grid;
     grid-template-rows: repeat(3, 70px);
+    margin-top: 90px;
     margin-right: 40px;
     align-items: center;
     text-align: center;
@@ -42,7 +95,7 @@ body {
     border-style: none;
     text-align: center;
     justify-self: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .search-wrapper > button {
@@ -75,7 +128,7 @@ body {
 .sub-wrapper > :first-child > img {
     height: 300px;
     width: 300px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 15px;
 }
 
@@ -99,14 +152,14 @@ body {
 }
  
 .favorites-wrapper {
-    padding: 50px 150px 50px 150px;
-    height: 600px;
+    padding: 100px;
     text-align: center;
     display: grid;
     grid-template: 50px 1fr/ repeat(3,1fr);
     row-gap: 50px;
     text-align: center;
     justify-items: center;
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +175,7 @@ body {
 .favorites-wrapper > :not(:first-child) > img {
     height: 350px;
     width: 350px;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 15px;
 }
 
@@ -146,4 +199,15 @@ body {
 
 .favorite-three {
     grid-area: 2/3;
+}
+
+
+/*Pseudo-classes*/
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
