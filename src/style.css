@@ -62,6 +62,12 @@ body {
 .footer > :nth-child(2) {
     font-size: 18px;
 }
+
+.footer-right-wrapper > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 /*Home Page*/
 
 .banner {
@@ -188,8 +194,9 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    justify-content: center;
     gap: 15px;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .favorite-one {
@@ -205,10 +212,66 @@ body {
     grid-area: 2/3;
 }
 
+/*Menu Page*/
+
+.menu-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 270px;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 30px;
+    width: 700px;
+    height: 800px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 15px;
+}
+
+.menu-wrapper > :first-child {
+    font-size: 50px;
+    font-family: 'CrabSalad';
+}
+
+.menu-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-wrapper > div > :first-child {
+    font-size: 32px;
+    font-family: 'CrabSalad';
+    margin-bottom: 20px;
+}
+
+.line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+.menu-wrapper > div > :nth-child(2) {
+    font-size: 25px;
+}
+
 /*Contact Page*/
 
 .contact {
-    height: 900px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,17 +287,20 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.534);
     padding: 50px;
-    height: 400px;
     border-radius: 15px;
-    box-shadow: -5px -5px 5px 3px grey inset;
 }
 
 .contact > :first-child > :first-child {
     font-size: 60px;
     font-family: 'CrabSalad';
     margin: 0;
+    margin-bottom: 20px;
+}
+
+.contact > div > div > a {
+    color: black;
 }
 
 .contact > div> div {
@@ -243,14 +309,24 @@ body {
 
 .contact > div > :nth-child(2) {
     white-space: pre-line;
+    font-size: 24px;
 }
 
 .contact > div > :nth-child(3) {
     display: flex;
     flex-direction: column;
+    font-size: 24px;
 }
 
 /*Pseudo-classes*/
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
 
 input:focus {
     outline: none;
@@ -259,3 +335,13 @@ input:focus {
 input:focus::placeholder {
     color: transparent;
 }
+
+.contact > div > div > a:hover {
+    color: rgb(73, 73, 73);
+}
+
+
+.footer-right-wrapper > a:hover {
+    text-decoration: underline;
+}
+

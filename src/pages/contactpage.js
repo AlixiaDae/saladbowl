@@ -1,4 +1,4 @@
-import contactBackground from './images/alexander-andrews-JYGnB9gTCls-unsplash.jpg'
+import contactBackground from '../images/alexander-andrews-JYGnB9gTCls-unsplash.jpg'
 
 function contactContent() {
     const contact = document.createElement('div')

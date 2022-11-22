@@ -1,5 +1,6 @@
-import homePage from './homepage'
-import contactPage from './contactpage'
+import homePage from './pages/homepage'
+import menuPage from './pages/menupage'
+import contactPage from './pages/contactpage'
 
 function navBar() {
     const navWrapper = document.createElement('div')
@@ -29,7 +30,11 @@ function navBar() {
     const menuBtn = document.createElement('div')
     menuBtn.classList.add('nav-button')
     menuBtn.textContent = 'Menu'
-
+    menuBtn.addEventListener('click', (e) => {
+        if(e.target.classList.contains('active')) return
+        setActiveBtn(menuBtn)
+        menuPage()
+    })
     navWrapper.appendChild(menuBtn)
 
     const contactBtn = document.createElement('div')
@@ -70,9 +75,18 @@ function footerBar() {
     footerLeft.textContent = '©Salad Bowl 2022'
     footer.appendChild(footerLeft)
 
+    const footerRightWrapper = document.createElement('div')
+    footerRightWrapper.classList.add('footer-right-wrapper')
+    footer.appendChild(footerRightWrapper)
+
     const footerRight = document.createElement('div')
-    footerRight.textContent = 'Made for OdinProject by AlixiaDae'
-    footer.appendChild(footerRight)
+    footerRight.textContent = 'Made for OdinProject'
+    footerRightWrapper.appendChild(footerRight)
+
+    const footerRightLink = document.createElement('a')
+    footerRightLink.textContent = 'AlixiaDae'
+    footerRightLink.href = 'https://github.com/AlixiaDae'
+    footerRightWrapper.appendChild(footerRightLink)
 
     return footer
 }

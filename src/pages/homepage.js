@@ -1,10 +1,10 @@
-import bannerImage from './images/louis-hansel-MlPD-AzZYMg-unsplash.jpg'
-import salad1 from './images/salad.jpg'
-import salad2 from './images/mariana-medvedeva-fk6IiypMWss-unsplash.jpg'
-import favorite1 from './images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg'
-import favorite2 from './images/dovile-ramoskaite-xX9SmqQCbFY-unsplash.jpg'
-import favorite3 from './images/freddy-g-m3OuPu9oTuY-unsplash.jpg'
-import choppingBoard from './images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg'
+import bannerImage from '../images/louis-hansel-MlPD-AzZYMg-unsplash.jpg'
+import salad1 from '../images/salad.jpg'
+import salad2 from '../images/mariana-medvedeva-fk6IiypMWss-unsplash.jpg'
+import favorite1 from '../images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg'
+import favorite2 from '../images/dovile-ramoskaite-xX9SmqQCbFY-unsplash.jpg'
+import favorite3 from '../images/freddy-g-m3OuPu9oTuY-unsplash.jpg'
+import choppingBoard from '../images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg'
 
 function homeContent() {
     const homeBody = document.createElement('div')
