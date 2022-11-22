@@ -23,6 +23,10 @@ body {
     font-family: 'CrabSalad';
 }
 
+.nav-button {
+    cursor: pointer;
+}
+
 .logo {
     grid-area: 1;
     font-size: 55px;

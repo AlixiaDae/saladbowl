@@ -1,6 +1,6 @@
 import contactBackground from './images/alexander-andrews-JYGnB9gTCls-unsplash.jpg'
 
-function contactPage() {
+function contactContent() {
     const contact = document.createElement('div')
     contact.classList.add('contact')
     contact.style.backgroundImage = `url(${contactBackground})`
@@ -26,6 +26,12 @@ function contactPage() {
   
 
     return contact
+}
+
+function contactPage() {
+    const main = document.getElementById('main')
+    main.textContent = ''
+    main.appendChild(contactContent())
 }
 
 

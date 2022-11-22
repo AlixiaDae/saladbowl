@@ -6,7 +6,7 @@ import favorite2 from './images/dovile-ramoskaite-xX9SmqQCbFY-unsplash.jpg'
 import favorite3 from './images/freddy-g-m3OuPu9oTuY-unsplash.jpg'
 import choppingBoard from './images/lukas-blazek-f-TWhXOrLiU-unsplash.jpg'
 
-function homePage() {
+function homeContent() {
     const homeBody = document.createElement('div')
 
     const banner = document.createElement('div')
@@ -96,6 +96,12 @@ function homePage() {
     favoritesWrapper.appendChild(favoriteItemThreeWrapper)
 
     return homeBody
+}
+
+function homePage() {
+    const main = document.getElementById('main')
+    main.textContent = ''
+    main.appendChild(homeContent())
 }
 
 export default homePage
