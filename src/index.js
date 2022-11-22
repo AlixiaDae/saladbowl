@@ -1,3 +1,4 @@
+import contactPage from "./contactpage";
 import homePage from "./homePage";
 
 
@@ -40,8 +41,20 @@ function footerBar() {
     return footer
 }
 
-const content = document.getElementById('content')
-    content.appendChild(navBar())
-    content.appendChild(homePage())
-    content.appendChild(footerBar())
+function firstLoad() {
+    const content = document.getElementById('content')
+        content.appendChild(navBar())
+        content.appendChild(homePage())
+        content.appendChild(footerBar())
+    return content
+}
 
+function loadPage() {
+    const content = document.getElementById('content')
+        content.appendChild(navBar())
+        content.appendChild(contactPage())
+        content.appendChild(footerBar())
+    return content
+}
+
+loadPage()
