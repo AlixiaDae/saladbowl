@@ -86,7 +86,6 @@ function loadPage() {
 
         setActiveBtn(document.querySelector('.nav-button')) 
         homePage()
-
 }
 
 
