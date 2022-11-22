@@ -1,6 +1,7 @@
 import homePage from './pages/homepage'
 import menuPage from './pages/menupage'
 import contactPage from './pages/contactpage'
+import './style.css'
 
 function navBar() {
     const navWrapper = document.createElement('div')

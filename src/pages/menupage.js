@@ -1,4 +1,5 @@
 import menuBackgroundImage from '../images/freddy-castro-u3ajSXhZM_U-unsplash.jpg'
+import '../style.css'
 
 function menuContent() {
     const menu = document.createElement('div')
